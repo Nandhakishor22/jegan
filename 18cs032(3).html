@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+            body{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                background-color: rgb(131, 131, 131);
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+
+            }
+            .links li{
+                display: inline-block;
+                padding: 0px 20px;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 16px;
+            } 
+           
+            .links li a{
+                
+                transition: all 0.6s ease 0s;
+            }
+            .links li a:hover{
+                background-color: rgb(75, 71, 71);
+                color: white;
+                transition: all 0.5s ease 0s;
+            }
+            .links li a.active{
+                background-color: gray;
+                color: white;
+                
+            }
+            .topics{
+                font-size: 25px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin-top: 20px;
+            }
+            h2{
+                font-family: "Lucida Console", "Courier New", monospace;
+
+            }
+            p{
+                font-size: 20px;
+                
+            }
+            .li{
+                font-size: 20px;
+                margin-top: 10px;
+                margin-left: 100px;
+                
+            }
+            .topics{
+                font-size: 20px;
+                margin-top: 10px;
+                list-style: none;
+            }
+            .topics:hover{
+                background-color: white  ;
+                color: black;
+            }
+            .list
+            {
+                width: 200px;
+                height: 200px;
+                border: 2px solid black;
+                text-align: left;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 50px;
+                
+            }
+            a, a:hover, a:focus, a:active {
+            text-decoration: none;
+                color: inherit;
+            }
+            .items{
+                font-size: 20px;
+                border: 2px solid black;
+            }
+            #top {
+		        background-color: white;
+		        color: black;
+		        font-family: sans-serif;
+		        font-weight: bolder;
+		        width: 50px;
+		        height: 50px;
+		        border-radius: 50%;
+		        line-height: 50px;
+		        text-align: center;
+		        position: fixed;
+		        bottom: 50px;
+		        right: 15px;
+                text-decoration: underline;
+                border: 3px solid rgb(0, 0, 0);
+	        }
+ 
+           
+           
+          
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                
+                <ul class="links">
+                    <li style="color: white;"><a href="assignment.html" >HOME</a></li>
+                    <li style="color: white;"><a href="18cs032(2).html">CONTACT</a></li>
+                    <li style="color: white;"><a href="18cs032(3).html" class="active">ABOUT</a></li>
+                    
+                </ul>
+            </nav>
+            
+        </header>
+       
+
+   
+        <div id="main">
+        <table align="center" bgcolor="white">
+            <tr>
+        <td><h1 style="text-align: center; font-family: lucidaconsole,monospace;">HTML TAGS</h1></td>
+    </tr>
+    </table>
+</div>
+    
+    <a href="#main" id="go"><div id="top">Top</div></a>
+    
+    <div class="list">
+    <ul>
+        <li class="topics"><a href="#html">html tag</a></li>
+        <li class="topics"><a href="#head">head tag</a></li>
+        <li class="topics"><a href="#body">body tag</a></li>
+        <li class="topics"><a href="#title">title tag</a></li>
+        <li class="topics"><a href="#h1">h1 tag</a></li>
+        <li class="topics"><a href="#p">p tag</a></li>
+        
+    
+
+        
+    </ul>
+    
+    </div>
+    <br><br><br><br>
+    <hr style="height: 4px; color: black;background-color: black;">
+    <br><br>
+    <a name=html></a>
+        <h2><u>1.Html tag</u></h2>
+        <p>The &lt;html&gt; is used to represent the root of an html Document<br>
+           The &lt;html&gt;  tag is the container for all other hyml elements
+           (except for the &lt;!Doctype&gt; tag)<br>
+           While using this html tag the developer always include the lang attribute 
+           inside the html tag, to declare the of the webpage. This is meant to assist
+           search engines and browsers.<br>
+           ex:<br>
+           
+           <code>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt; html lang="en" &gt;<br>
+            &nbsp;&lt;head&gt;<br>
+            &nbsp;&lt;/head&gt;<br>
+            &nbsp;&lt;body&gt;<br>
+            &nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+
+           </code>
+        
+
+        </p>
+    <a name=head></a>
+        <h2><u>2.Head tag</u></h2>
+        <p>The &lt;head&gt; tag is used to define the head portion of the document
+            which contains the information about the document.<br>The &lt;head&gt;
+            contains other head elements such as 
+             <table class="items">
+                 <tr><td>&lt;title&gt;</td></tr>
+                 <tr><td>&lt;meta&gt;</td></tr>
+                 <tr><td>&lt;link&gt;</td></tr>
+                 <tr><td>&lt;style&gt;</td></tr>
+                </table>
+        </p>
+        <p>
+             The Metadata is data about the html document. Metadata is not displayed.
+             Metadata typically define the document titile, character set, styles, scripts, and other meta information.
+             ex:<br>
+             <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &nbsp;&lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;My test page&lt;/title&gt;<br>
+                &nbsp;&lt;/head&gt;<br>
+                &nbsp;&lt;body&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;This is my page&lt;/p&gt;<br>
+                &nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+             </code>
+
+        </p>
+    <a name=body></a>
+        <h2><u>3.Body tag</u></h2>
+        <p>
+        HTML &lt;body&gt; tag defines the main content of an HTML document which displays on the browser.
+        It can contain text content, paragraphs, headings, images, tables, links, videos, etc.
+        <br>
+        The &lt;body&gt; must be the second element after the &lt;head&gt; tag or it should be placed between 
+        &lt;/head&gt; and &lt;/html&gt; tags. This tag is required for every HTML document and should only use
+        once in the whole HTML document.<br>
+        syntax:<br>
+        
+
+
+         
+        <code>
+            &lt;body&gt;Content goes here .......&lt;/body&gt;
+
+        </code>
+        <br>
+        <b>ex:  </b><br>
+        <code>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&lt;head&gt;<br>
+            &nbsp;&lt;/head&gt;<br>
+            &nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&lt;h2&gt;Example of body tag&lt;/h2&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;This line is written inside the body tag&lt;/p&gt;<br>
+            &nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+
+        </code>
+    </p>
+    <a name=title></a>
+    <h2><u>4.Title tag</u></h2>
+    <p>
+        The &lt;title&gt; tag defines the title of the document The title must be text-only, 
+        and it is shown in the browser's title bar or in the page's tab.<br>It sets the 
+        title in the browser toolbar. It provides the title for the web page when it is 
+         added to favorites. It displays the title for the page in search engine results.<br>
+         The &lt;title&gt; element<br>
+         &nbsp;1.defines a title in the browser toolbar<br>
+         &nbsp;2.provides a title for the page when it is added to favorites<br>
+         &nbsp;3.displays a title for the page in search-engine results<br>
+         A web page canno have more than one &lt;title&gt; tag<br>
+         syntax:<br>
+         <code>&lt;title&gt; Title name &lt;/title&gt;</code><br>
+         ex:<br>
+         <code>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&lt;title&gt; Title name &lt;/title&gt;<br> 
+            &nbsp;&lt;/head&gt;<br>
+            &nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&lt;h2&gt;Body&lt;/h2&gt;<br>
+            &nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+
+         </code>
+    </p>
+    <a name=h1></a>
+    <h2><u>5.H1 tag</u></h2>
+    <p>
+        HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags
+        A HTML heading or HTML h tag can be defined as a title or a subtitle 
+        which you want to display on the webpage. When you place the text within
+         the heading tags &lt;h1&gt;.........&lt;/h1&gt;, it is displayed on the browser in the 
+         bold format and size of the text depends on the number of heading.<br>
+        &lt;h1&gt; defines the most important heading and &lt;h6&gt; defines the   
+        least important heading<br>
+        Search engines use the headings to index the structure and content of your web pages.<br>
+        Ex:<br>
+        <code>
+            &lt;h1&gt;Heading no. 1&lt;/h1&gt;<br>
+            &lt;h2&gt;Heading no. 2&lt;/h2&gt;<br>  
+            &lt;h3&gt;Heading no. 3&lt;/h3&gt;<br> 
+            &lt;h4&gt;Heading no. 4&lt;/h4&gt;<br>  
+            &lt;h5&gt;Heading no. 5&lt;/h5&gt;<br>  
+            &lt;h6&gt;Heading no. 6&lt;/h6&gt;<br>
+
+        </code>
+
+    </p>
+    <a name=p></a>
+    <h2><u>5.P tag</u></h2>
+    <p>
+        The &lt;p&gt; tag defines a paragraph.<br>
+        Browsers automatically add asingle blank line before and after each &lt;p&gt;.
+        An html &lt;p&gt; indicates the starting of the paragraph.<br> The browser ignores 
+        the lines in the paragraph in the source code to make the line break the user need to 
+        use the &lt;br&gt; tag.<br>
+        Ex:<br>
+        <code>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&lt;head&gt;<br>
+            &nbsp;&lt;/head&gt;<br>
+            &nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+            &nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+
+
+        </code>
+
+    </p>
+  
+  
+        
+    </body>
+</html>

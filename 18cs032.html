@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+            body{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                background-color: rgb(131, 131, 131);
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+
+            }
+            .links li{
+                display: inline-block;
+                padding: 0px 20px;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 16px;
+            } 
+           
+            .links li a{
+                
+                transition: all 0.6s ease 0s;
+            }
+            .links li a:hover{
+                background-color: rgb(75, 71, 71);
+                color: white;
+                transition: all 0.5s ease 0s;
+            }
+            .links li a.active{
+                background-color: gray;
+                color: white;
+                
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: 70% 26% ;
+            }
+            .login{
+                
+                width: 300px;
+                height: 400px;
+                margin-top: 30px;
+                background-color: white;
+                
+                
+            }
+            .head{
+                text-align: center;
+                background-color: rgb(36, 173, 219);
+                margin: 0;
+               
+            }
+            label{
+                margin-top: 10px;
+                margin-left: 20px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: bolder;
+
+
+            }
+            input{
+                margin-left: 25px;
+
+                font-family: 'Roboto', sans-serif;
+                margin-top: 18px;
+                width: 200px;
+                height: 22px;
+            }
+            input:hover{
+                border: 2px solid green;
+            }
+            .btn{
+                margin-left: 90px;
+                margin-top: 40px;
+                width: 100px;
+                height: 25px;
+                border: none;
+                background-color:rgb(36, 173, 219);
+                transition: all 0.5s ease 0s;
+                
+            }
+            .btn:hover{
+                background-color: rgb(16, 128, 165);
+            }
+            .secondcont{
+                
+                text-align: center;
+                padding: 100px;
+                
+            }
+            .na{
+                font-size: 45px;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+            }
+            .reg{
+                font-family: 'Roboto', sans-serif;
+                font-size: 35px;
+                color: white;
+            }
+           
+          
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                
+                <ul class="links">
+                    <li><a href="assignment.html" class="active">HOME</a></li>
+                    <li><a href="18cs032(2).html">CONTACT</a></li>
+                    <li><a href="18cs032(3).html">ABOUT</a></li>
+                    
+                </ul>
+            </nav>
+            
+        </header>
+        <div class="grid">
+        <div class="secondcont">
+            <h1 class="na">JEGAN</h1>
+            <h2 class="reg">18CS032</h2>
+        </div>
+        <div class="login">
+            <h1 class="head">LOG-IN</h1>
+            <form>
+                <label for="name">Username</label><br>
+                <input type="text" name="name"  required><br><br>
+                <label for="pwd" >Password</label><br>
+                <input type="password" name="pwd"  required><br><br>
+                <label for="mail">Emai-id</label><br>
+                <input type="email" name="mail"  required><br><br>
+                <input type="submit" name="sub" class="btn" value="Login">
+
+
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
